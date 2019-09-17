@@ -1,5 +1,6 @@
 import React from 'react';
 import navio from 'navio';
+import './Nav.css';
 
 
 class Nav extends React.Component{
@@ -11,37 +12,34 @@ class Nav extends React.Component{
   }
 
   componentDidUpdate(){
-    console.log("cm");
     this.nav();
   }
 
   componentDidMount(){
-    console.log("cm");
     this.nav();
   }
 
   
   nav(){
-      const nv = new navio(this.divNavio, 600);
+    const nv = new navio(this.divNavio, 600);
 
-      console.log("cm");
-      console.log(this.props);
-      nv.data(this.props.datos);
+    nv.data(this.props.datos);
+    nv.addAllAttribs();
 
-      nv.updateCallback(select => {
-        console.log("cosas estan pasando");
-      });
+    nv.updateCallback(select => {
+      console.log("cosas estan pasando");
+    });
+
   }
 
   render(){
     return(  
-      <>    
-    <div>Hola</div>
-    <div 
-      ref={divNavio => this.divNavio = divNavio}> 
-    
+    <div id="navioDIV">    
+      <div 
+        ref={divNavio => this.divNavio = divNavio}> 
+      
+      </div>
     </div>
-    </>
     );
   }
 }
