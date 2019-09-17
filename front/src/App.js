@@ -17,6 +17,10 @@ class App extends React.Component {
     return (
       <>
       <div> Parcial 1 GREGORIO OSPINA.</div>
+      <div>
+        <input type="text"/>
+        <button className="btn"> </button> 
+      </div>
       <div id="grupoDeBotones"> 
 
       </div>
@@ -26,6 +30,10 @@ class App extends React.Component {
   }
 
   componentDidMount(){
+    this.getData();
+  }
+
+  componentDidUpdate(){
     this.getData();
   }
 

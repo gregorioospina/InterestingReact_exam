@@ -11,16 +11,20 @@ class Nav extends React.Component{
   }
 
   componentDidUpdate(){
+    console.log("cm");
+    this.nav();
   }
 
   componentDidMount(){
+    console.log("cm");
     this.nav();
   }
 
   
   nav(){
-    const nv = new navio(this.divNavio, 600);
+      const nv = new navio(this.divNavio, 600);
 
+      console.log("cm");
       console.log(this.props);
       nv.data(this.props.datos);
 
