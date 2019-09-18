@@ -1,6 +1,6 @@
 # VISUALIZADOR DE DATOS.GOV
 
-Welcome to datagov-visalizer the fun and interactive way of viewing data from datos.gov.co. You can visit the deployed version of datagov-visalizer in **URL HEROKU**. However, I will be explaining to you in this brief document how you can download this repository and run datagov-visalizer locally. 
+Welcome to datagov-visalizer the fun and interactive way of viewing data from datos.gov.co. You can visit the deployed version of datagov-visalizer in **https://cryptic-forest-43575.herokuapp.com/ **. However, I will be explaining to you in this brief document how you can download this repository and run datagov-visalizer locally. 
 
 #Technologies
 This project was done with a React front, using the nav.io libraries. With a express.js back deploying it on Heroku. 
@@ -17,13 +17,14 @@ Now that you have correctly deployed the web app, you just need to head over to 
 The creative component that should be apparent is that as you go typing urls, the page displays your history of queries. 
 
 ## Screenshot. 
-
-
+![ss](https://i.imgur.com/ICxirqV.jpg)
 
 ## Author 
 
 Gregorio Ospina. 
+
 https://gregorioospina.com
+
 201631760. 
 
 
