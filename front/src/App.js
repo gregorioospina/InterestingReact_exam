@@ -27,10 +27,13 @@ class App extends React.Component {
   render(){
     return (
       <>
-      <div> Parcial 1 GREGORIO OSPINA.</div>
-      <div>
-        <input type="text" onChange={this.changeUrlValue} />
-        <button className="btn btn-primary btn-sm" onClick={this.dataReady}> Search </button> 
+      <div id="maindiv">
+        <div>
+          <h1>DATAGOV-VISUALIZER</h1>
+          <p> Gregorio Ospina - 201631760</p>
+        </div>
+        <input type="text" id="inputtext" onChange={this.changeUrlValue} placeholder="Ingrese la URL" />
+        <button id="btnorange" className="btn btn-primary btn-sm" onClick={this.dataReady}> Search </button> 
       </div>
       <div id="grupoDeBotones"> 
 
@@ -89,30 +92,34 @@ class App extends React.Component {
       console.log(dats);
       return (
       <>
-      <div>Voila!</div>
+      <div>{this.historial(val)}</div>
       <Nav datos={dats} />
       </>
       );
     }
     else if(dats === "none"){
-      return (<div className="historial"> Historial </div>);
+      return (<div className="historial">  </div>);
     }
     else{
-      return (<div> Ingrese la URL... </div>);
+      return (<div id="introduction"> 
+          <h1>BIENVENIDO A DATOSGOV-VIS! </h1>
+            <p>
+            El componente creativo es la funcionalidad de
+            el historial. Muestra las ultimas dos busquedas
+            realizadas por el usuario. No vuelve a hacer las
+            peticiones rest, estas se hacen una unica vez para no
+            hacer muy cargada la funcionalidad
+            </p>
+          </div>);
     }
   }
 
-/*
-  printNames(){
-    console.log(this.props);
-    return this.props.datos.map(dato => {
-      if(dato.ano === "2010"){
-        return(<p> {this.props.name} </p>);
-      }
-    })
+  historial(val){
+    return val === "1"? "Actual" : val === "2" ? "Historial 2" : "Historial 3"
   }
 
 
+/** BONO */
 getAllData(url){
   let offset = 0;
   let limit = 1116;
@@ -139,7 +146,6 @@ getAllData(url){
   }
 
 }
-*/
 
   getData(url){ 
     console.log("hola");
@@ -148,6 +154,21 @@ getAllData(url){
       .then(_datos =>
         {
         console.log(_datos);
+        if(this.state.datos_2.length === 0){
+          let copy = this.state.datos;
+          this.setState({datos_2: copy});
+          this.setState({datos: _datos}, ()=>{
+            this.setState({readyFreddy: true});
+          });
+        } else if(this.state.datos_2.length !== 0){
+          let copy = this.state.datos;
+          let copy2 = this.state.datos_2;
+          this.setState({datos_3: copy2});
+          this.setState({datos_2: copy});
+          this.setState({datos: _datos}, ()=>{
+            this.setState({readyFreddy: true});
+          });
+        }
         this.setState({datos: _datos}, ()=>{
           this.setState({readyFreddy: true});
         });

@@ -6,8 +6,36 @@
     color: white;
 }
 
-.historial{
+#inputtext {
+    background: #1c1f22;
+    border-radius: 20pt; 
+    border-style: solid ;
+    border-width: 1px;
+    border-color: #E98A15;
+    color: white;
+    
+}
+
+#btnorange{
+    background-color:#E98A15;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: none; 
+}
+
+.col-4:hover{
     background-color: #E98A15;
+    transition-duration: 1s;
+}
+
+#maindiv{
+    margin-left: 40%;
+}
+
+#introduction{
+    font-size: 25pt;
+    color: orange;
+
 }
 
 body {
