@@ -1,39 +1,30 @@
-# Awesome Mini Proyect
-## Author
-- Sergio Naranjo Puentes
+# VISUALIZADOR DE DATOS.GOV
 
-  [Personal Site](https://snaranjop1.github.io) - [GitHub](https://github.com/snaranjop1)
+Welcome to datagov-visalizer the fun and interactive way of viewing data from datos.gov.co. You can visit the deployed version of datagov-visalizer in **https://cryptic-forest-43575.herokuapp.com/ **. However, I will be explaining to you in this brief document how you can download this repository and run datagov-visalizer locally. 
 
-## Links
+#Technologies
+This project was done with a React front, using the nav.io libraries. With a express.js back deploying it on Heroku. 
 
-**Deployed at:** https://awesomeproyect.herokuapp.com/
+# npm-install
+You must first download the repository by either forking it or zip downloading it. Now enter to the folder where it was downloaded and enter to **raiz** through your favorite command bash. Now do npm-install. After this has finished type cd front and type once more npm-install. (just to be sure) now you're ready to launch. Type cd .. and type nodemon. Then open a new window of command and in the front folder type npm start. Now in the localhost:3000 you should have our beautiful datagov-visualizer. 
 
-## Description
+## How to use it
 
-## Objective
+Now that you have correctly deployed the web app, you just need to head over to datos.gov.co and enter the URL that you want. Press submit and voila! The results should appear. 
 
-## Instructions to execute
+## Creative Component 
 
-### Requisites
+The creative component that should be apparent is that as you go typing urls, the page displays your history of queries. 
 
-- **Node JS**
+## Screenshot. 
+![ss](https://i.imgur.com/ICxirqV.jpg)
 
-Verify that nodejs is installed by running "node -v" on terminal or cmd. It can be downloaded in https://nodejs.org/ (versión LTS)
+## Author 
 
-### Steps to run develop version
+Gregorio Ospina. 
 
-1. On root folder run
-```
-npm start
-```
+https://gregorioospina.com
 
-## Screenshots
+201631760. 
 
-### Main Menu
 
-![Awesome Mini Proyect ]()
-
-## Licence
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This repository has the standard MIT license. You can find it [here.](https://github.com/snaranjop1/awesomeProyect/blob/master/LICENSE)
