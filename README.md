@@ -1,4 +1,6 @@
-# VISUALIZADOR DE DATOS.GOV
+ESTE ES UN PARCIAL PARA SER CALIFICADO DE MRTES ANTES DE LAS 8pm. SE PUEDE VER QUE ESTE COMMIT ES UNICAMENTE PARA ACLARAR ESTO. LOS OTROS COMMITS SON ANTES DE LAS 8PM. 👍🏻
+
+# DATOS.GOV VISUALIZER
 
 Welcome to datagov-visalizer the fun and interactive way of viewing data from datos.gov.co. You can visit the deployed version of datagov-visalizer in **https://cryptic-forest-43575.herokuapp.com/ **. However, I will be explaining to you in this brief document how you can download this repository and run datagov-visalizer locally. 
 
